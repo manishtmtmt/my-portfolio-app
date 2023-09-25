@@ -11,7 +11,7 @@ export const Navbar = () => {
   const { isDark } = useContext(ThemeContext);
   return (
     <Headroom>
-      <header className={isDark ? "dark-mode header" : "header"}>
+      <header className={isDark ? "dark-menu header" : "header"}>
         <Link to="/" className="logo link">
           <span className="grey-color">&lt;</span>
           <span className="logo-name">{greeting.username}</span>
