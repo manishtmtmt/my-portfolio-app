@@ -7,6 +7,7 @@ import { splashScreen } from "./profile";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Background } from "./components/Background/Background";
 import { SplashScreen } from "./components/SplashScreen/SplashScreen";
+import { Home } from "./pages/Home/Home";
 
 function App() {
   const { isDark } = useContext(ThemeContext);
@@ -34,7 +35,7 @@ function App() {
         <SplashScreen />
       ) : (
         <Routes>
-          <Route path="/" element={<h1>Home Page</h1>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       )}
     </BrowserRouter>
